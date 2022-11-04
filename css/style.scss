@@ -37,7 +37,8 @@ body {
     max-width: 300px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 640px),
+  (max-height: 780px) {
     max-width: 250px;
   }
 }
@@ -53,7 +54,8 @@ body {
     max-width: 300px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 640px),
+  (max-height: 780px) {
     max-width: 250px;
   }
 }
