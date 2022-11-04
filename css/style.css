@@ -18,7 +18,7 @@ body {
 .circle {
   background-color: #23CF5F;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   position: fixed;
   -webkit-animation: background-spotify 2s ease 14s forwards;
           animation: background-spotify 2s ease 14s forwards;
@@ -29,9 +29,20 @@ body {
   place-items: center;
   position: relative;
   z-index: 200;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   -webkit-animation: centralize 1s ease 16s forwards;
           animation: centralize 1s ease 16s forwards;
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 300px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 250px;
+  }
 }
 
 #logo {
@@ -41,6 +52,16 @@ body {
   opacity: 0;
   -webkit-animation: logo 2s ease 16s forwards;
           animation: logo 2s ease 16s forwards;
+}
+@media (max-width: 900px) {
+  #logo {
+    max-width: 300px;
+  }
+}
+@media (max-width: 640px) {
+  #logo {
+    max-width: 250px;
+  }
 }
 
 #spotify-1 {

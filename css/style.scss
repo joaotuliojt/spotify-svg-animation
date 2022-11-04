@@ -19,7 +19,7 @@ body {
 .circle {
   background-color: #23CF5F;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   position: fixed;
   animation: background-spotify 2s ease 14s forwards;
 }
@@ -29,8 +29,17 @@ body {
   place-items: center;
   position: relative;
   z-index: 200;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   animation: centralize 1s ease 16s forwards;
+
+  @media (max-width: 900px) {
+    max-width: 300px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 250px;
+  }
 }
 
 #logo {
@@ -39,6 +48,14 @@ body {
   bottom: -40%;
   opacity: 0;
   animation: logo 2s ease 16s forwards;
+
+  @media (max-width: 900px) {
+    max-width: 300px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 250px;
+  }
 }
 
 
