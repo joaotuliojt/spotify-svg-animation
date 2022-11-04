@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.circle {
+  background-color: #23CF5F;
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  -webkit-animation: background-spotify 2s ease 14s forwards;
+          animation: background-spotify 2s ease 14s forwards;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 200;
+  width: 400px;
+  -webkit-animation: centralize 1s ease 16s forwards;
+          animation: centralize 1s ease 16s forwards;
+}
+
+#logo {
+  width: 400px;
+  position: absolute;
+  bottom: -40%;
+  opacity: 0;
+  -webkit-animation: logo 2s ease 16s forwards;
+          animation: logo 2s ease 16s forwards;
+}
+
+#spotify-1 {
+  -webkit-animation: appear 1s ease both, bounce 1s ease 4, bar-one 9s ease 5s forwards;
+          animation: appear 1s ease both, bounce 1s ease 4, bar-one 9s ease 5s forwards;
+}
+
+#spotify-2 {
+  -webkit-animation: appear 1s ease 0.3s both, bounce 1s ease 0.3s 4, bar-two 9s ease 5s forwards;
+          animation: appear 1s ease 0.3s both, bounce 1s ease 0.3s 4, bar-two 9s ease 5s forwards;
+}
+
+#spotify-3 {
+  -webkit-animation: appear 1s ease 0.6s both, bounce 1s ease 0.6s 4, bar-three 9s ease 5s forwards;
+          animation: appear 1s ease 0.6s both, bounce 1s ease 0.6s 4, bar-three 9s ease 5s forwards;
+}
+
+@-webkit-keyframes centralize {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-16%);
+  }
+}
+
+@keyframes centralize {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-16%);
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    stroke-width: 0;
+  }
+  100% {
+    stroke-width: 48;
+  }
+}
+@keyframes appear {
+  0% {
+    stroke-width: 0;
+  }
+  100% {
+    stroke-width: 48;
+  }
+}
+@-webkit-keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes bar-one {
+  0% {
+    d: path("M293.5 383.5C293.5 383 293.5 382.5 293.5 382");
+    stroke-width: 48;
+  }
+  10% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  20% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  30% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  40% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  50% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  60% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  70% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  80% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  90% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  100% {
+    d: path("M154.5 261.5C217.5 236 465.5 210.5 630 309");
+    stroke-width: 70;
+  }
+}
+@keyframes bar-one {
+  0% {
+    d: path("M293.5 383.5C293.5 383 293.5 382.5 293.5 382");
+    stroke-width: 48;
+  }
+  10% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  20% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  30% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  40% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  50% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  60% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  70% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  80% {
+    d: path("M293 430C293 415.5 293 349 293 338");
+    stroke-width: 48;
+  }
+  90% {
+    d: path("M293 524C293 470 293 323.5 293 244");
+    stroke-width: 48;
+  }
+  100% {
+    d: path("M154.5 261.5C217.5 236 465.5 210.5 630 309");
+    stroke-width: 70;
+  }
+}
+@-webkit-keyframes bar-two {
+  0% {
+    d: path("M384 383.5C384 383 384 382.5 384 382");
+    stroke-width: 48;
+  }
+  10% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  20% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  30% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  40% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  50% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  60% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  70% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  80% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  90% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  100% {
+    d: path("M175 384.5C260 355 451.5 350 581.5 432");
+    stroke-width: 60;
+  }
+}
+@keyframes bar-two {
+  0% {
+    d: path("M384 383.5C384 383 384 382.5 384 382");
+    stroke-width: 48;
+  }
+  10% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  20% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  30% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  40% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  50% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  60% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  70% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  80% {
+    d: path("M384 524C384 485 384 278.5 384 244");
+    stroke-width: 48;
+  }
+  90% {
+    d: path("M384 430C384 416 384 353 384 338");
+    stroke-width: 48;
+  }
+  100% {
+    d: path("M175 384.5C260 355 451.5 350 581.5 432");
+    stroke-width: 60;
+  }
+}
+@-webkit-keyframes bar-three {
+  0% {
+    d: path("M475 383.5C475 383 475 382.5 475 382");
+  }
+  10% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  20% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  30% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  40% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  50% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  60% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  70% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  80% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  90% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  100% {
+    d: path("M184 500.5C259 481.5 424.5 462.5 540 541");
+  }
+}
+@keyframes bar-three {
+  0% {
+    d: path("M475 383.5C475 383 475 382.5 475 382");
+  }
+  10% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  20% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  30% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  40% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  50% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  60% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  70% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  80% {
+    d: path("M475 430C475 415.5 475 349 475 338");
+  }
+  90% {
+    d: path("M475 525C475 471 475 324.5 475 245");
+  }
+  100% {
+    d: path("M184 500.5C259 481.5 424.5 462.5 540 541");
+  }
+}
+@-webkit-keyframes background-spotify {
+  0% {
+    border-radius: 0%;
+    width: 100vw;
+    height: 100vw;
+  }
+  100% {
+    border-radius: 100%;
+    width: 0px;
+    height: 0px;
+  }
+}
+@keyframes background-spotify {
+  0% {
+    border-radius: 0%;
+    width: 100vw;
+    height: 100vw;
+  }
+  100% {
+    border-radius: 100%;
+    width: 0px;
+    height: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
